@@ -1,0 +1,125 @@
+:root {
+  --heading: "Roboto", sans-serif;
+  --text: "Roboto Mono", monospace;
+  --button-bg: #40798c;
+  --button-text-color: whitesmoke;
+  --error: rgb(187, 75, 75);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@500&display=swap");
+
+body {
+  font-family: var(--heading);
+  background-color: #6d868d;
+}
+
+h1,
+h2 {
+  color: #1f363d;
+}
+
+.container {
+  background-color: #cfe0c3;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+#contact-form input,
+input {
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--text);
+  font-size: 16px;
+  height: 45px;
+  background-color: #99b49d;
+  margin-right: 10px;
+}
+
+.contact-list {
+  margin-top: 50px;
+}
+
+#contact-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact-list li {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: center;
+  margin-bottom: 10px;
+}
+
+#contact-list li input {
+  width: 42%;
+  padding: 10px;
+}
+
+#contact-list li button {
+  width: 10%;
+  height: 45px;
+}
+
+input::placeholder {
+  opacity: 0.6;
+}
+
+input:disabled {
+  background-color: #99a392;
+  color: #353a33;
+}
+
+button {
+  font-family: var(--heading);
+  font-size: 14px;
+  height: 45px;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--button-bg);
+  color: var(--button-text-color);
+  opacity: 0.85;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+button.deleteButton,
+#deleteAllBtn {
+  background-color: rgb(165, 77, 77);
+}
+
+#deleteAllBtn {
+  color: #99a392;
+  background-color: #353a33;
+  font-size: 14px;
+}
+
+#deleteAllBtn:disabled {
+  display: none;
+}
+
+#error {
+  margin-top: 15px;
+  font-family: var(--text);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--error);
+}
+
+.icon-edit {
+  color: whitesmoke;
+}

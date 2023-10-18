@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/be535a0bde.js" crossorigin="anonymous"></script>
+    <title>Mina kontakter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mina kontakter</h1>
+        <div id="contact-form">
+            <input type="text" id="namn" placeholder="Namn"><br>
+            <input type="text" id="nummer" placeholder="Telefonnummer" pattern="[0-9+]+"><br>
+            <button id="saveButton"><i class="fa-solid fa-user-plus" style="color: #ffffff;"></i> Lägg till
+                kontakt</button>
+        </div>
+        <div id="error" class="error"></div>
+        <div id="contact-list" class="contact-list">
+            <!-- <h2>Kontaktlista</h2> -->
+            <ul id="contacts"></ul>
+            <button id="deleteAllBtn" disabled><i class="fa-solid fa-skull" style="color: #99a392;"></i> Radera alla
+                kontakter</button>
+        </div>
+    </div>
+    <script src="kontaktapp.js"></script>
+</body>
+
+</html>
