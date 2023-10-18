@@ -4,7 +4,7 @@ let contacts = [];
 // Generiskt felmeddelande :o)
 const error = "Du måste fylla i både namn och giltigt nummer.";
 
-// EventListener som väntar tills DOM:en har laddats färdigt innan den kör funktioner
+// EventListener som väntar tills DOM:en har laddats färdigt
 document.addEventListener("DOMContentLoaded", () => {
   const saveButton = document.getElementById("saveButton");
   const deleteAllButton = document.getElementById("deleteAllBtn");
